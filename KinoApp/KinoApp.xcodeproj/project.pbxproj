@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3D5F022986C76F00658583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F012986C76F00658583 /* AppDelegate.swift */; };
+		1D3D5F042986C76F00658583 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F032986C76F00658583 /* SceneDelegate.swift */; };
+		1D3D5F062986C76F00658583 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F052986C76F00658583 /* MainViewController.swift */; };
+		1D3D5F0B2986C77100658583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3D5F0A2986C77100658583 /* Assets.xcassets */; };
+		1D3D5F0E2986C77100658583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3D5F0C2986C77100658583 /* LaunchScreen.storyboard */; };
+		1D3D5F162986C82300658583 /* ItemForProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F152986C82300658583 /* ItemForProject.swift */; };
+		1D3D5F192986C86800658583 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F182986C86800658583 /* MovieViewController.swift */; };
+		1D3D5F1C2986C89F00658583 /* TrendingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F1B2986C89F00658583 /* TrendingCollectionViewCell.swift */; };
+		1D3D5F1F2986C8E100658583 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F1E2986C8E100658583 /* PlaceViewController.swift */; };
+		1D3D5F212986C8FE00658583 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F202986C8FE00658583 /* TicketViewController.swift */; };
+		1D3D5F242986C92200658583 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F232986C92200658583 /* ProfileViewController.swift */; };
+		1D3D5F262986C95300658583 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F252986C95300658583 /* CategoryCollectionViewCell.swift */; };
+		1D3D5F292986C97900658583 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F282986C97900658583 /* CategoryTableViewCell.swift */; };
+		1D3D5F2B2986C9A000658583 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F2A2986C9A000658583 /* SectionHeaderView.swift */; };
+		1D3D5F2D2987A87E00658583 /* CinemasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D5F2C2987A87E00658583 /* CinemasList.swift */; };
+		D3EB604EF0D41A72DD854FAB /* Pods_KinoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B69A2104FAC00D9F526B2D /* Pods_KinoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02DA6A9E33369E4BDDD9C86B /* Pods-KinoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoApp.release.xcconfig"; path = "Target Support Files/Pods-KinoApp/Pods-KinoApp.release.xcconfig"; sourceTree = "<group>"; };
+		03FFD3D69F87D9A8803171AB /* Pods-KinoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoApp.debug.xcconfig"; path = "Target Support Files/Pods-KinoApp/Pods-KinoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1D3D5EFE2986C76F00658583 /* KinoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3D5F012986C76F00658583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D3D5F032986C76F00658583 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D3D5F052986C76F00658583 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1D3D5F0A2986C77100658583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D3D5F0D2986C77100658583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D3D5F0F2986C77100658583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3D5F152986C82300658583 /* ItemForProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemForProject.swift; sourceTree = "<group>"; };
+		1D3D5F182986C86800658583 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		1D3D5F1B2986C89F00658583 /* TrendingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D3D5F1E2986C8E100658583 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		1D3D5F202986C8FE00658583 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		1D3D5F232986C92200658583 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1D3D5F252986C95300658583 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D3D5F282986C97900658583 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1D3D5F2A2986C9A000658583 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		1D3D5F2C2987A87E00658583 /* CinemasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemasList.swift; sourceTree = "<group>"; };
+		F3B69A2104FAC00D9F526B2D /* Pods_KinoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D3D5EFB2986C76F00658583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EB604EF0D41A72DD854FAB /* Pods_KinoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B374B0B1E031A8AF4122878 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3B69A2104FAC00D9F526B2D /* Pods_KinoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D3D5EF52986C76F00658583 = {
+			isa = PBXGroup;
+			children = (
+				1D3D5F002986C76F00658583 /* KinoApp */,
+				1D3D5EFF2986C76F00658583 /* Products */,
+				76E366D975B76EB2CDA2AEF0 /* Pods */,
+				0B374B0B1E031A8AF4122878 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D3D5EFF2986C76F00658583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D3D5EFE2986C76F00658583 /* KinoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D3D5F002986C76F00658583 /* KinoApp */ = {
+			isa = PBXGroup;
+			children = (
+				1D3D5F1D2986C8BC00658583 /* views */,
+				1D3D5F172986C84600658583 /* viewControllers */,
+				1D3D5F012986C76F00658583 /* AppDelegate.swift */,
+				1D3D5F032986C76F00658583 /* SceneDelegate.swift */,
+				1D3D5F052986C76F00658583 /* MainViewController.swift */,
+				1D3D5F152986C82300658583 /* ItemForProject.swift */,
+				1D3D5F2C2987A87E00658583 /* CinemasList.swift */,
+				1D3D5F0A2986C77100658583 /* Assets.xcassets */,
+				1D3D5F0C2986C77100658583 /* LaunchScreen.storyboard */,
+				1D3D5F0F2986C77100658583 /* Info.plist */,
+			);
+			path = KinoApp;
+			sourceTree = "<group>";
+		};
+		1D3D5F172986C84600658583 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D3D5F182986C86800658583 /* MovieViewController.swift */,
+				1D3D5F1E2986C8E100658583 /* PlaceViewController.swift */,
+				1D3D5F202986C8FE00658583 /* TicketViewController.swift */,
+				1D3D5F232986C92200658583 /* ProfileViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		1D3D5F1D2986C8BC00658583 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1D3D5F1B2986C89F00658583 /* TrendingCollectionViewCell.swift */,
+				1D3D5F252986C95300658583 /* CategoryCollectionViewCell.swift */,
+				1D3D5F282986C97900658583 /* CategoryTableViewCell.swift */,
+				1D3D5F2A2986C9A000658583 /* SectionHeaderView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		76E366D975B76EB2CDA2AEF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03FFD3D69F87D9A8803171AB /* Pods-KinoApp.debug.xcconfig */,
+				02DA6A9E33369E4BDDD9C86B /* Pods-KinoApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D3D5EFD2986C76F00658583 /* KinoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3D5F122986C77100658583 /* Build configuration list for PBXNativeTarget "KinoApp" */;
+			buildPhases = (
+				8540D1905AFC298D52D36A9C /* [CP] Check Pods Manifest.lock */,
+				1D3D5EFA2986C76F00658583 /* Sources */,
+				1D3D5EFB2986C76F00658583 /* Frameworks */,
+				1D3D5EFC2986C76F00658583 /* Resources */,
+				A33DC05354BB19A1A885E082 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinoApp;
+			productName = KinoApp;
+			productReference = 1D3D5EFE2986C76F00658583 /* KinoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D3D5EF62986C76F00658583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1D3D5EFD2986C76F00658583 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1D3D5EF92986C76F00658583 /* Build configuration list for PBXProject "KinoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D3D5EF52986C76F00658583;
+			productRefGroup = 1D3D5EFF2986C76F00658583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D3D5EFD2986C76F00658583 /* KinoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D3D5EFC2986C76F00658583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3D5F0E2986C77100658583 /* LaunchScreen.storyboard in Resources */,
+				1D3D5F0B2986C77100658583 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8540D1905AFC298D52D36A9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A33DC05354BB19A1A885E082 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoApp/Pods-KinoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoApp/Pods-KinoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinoApp/Pods-KinoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D3D5EFA2986C76F00658583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3D5F212986C8FE00658583 /* TicketViewController.swift in Sources */,
+				1D3D5F162986C82300658583 /* ItemForProject.swift in Sources */,
+				1D3D5F192986C86800658583 /* MovieViewController.swift in Sources */,
+				1D3D5F1C2986C89F00658583 /* TrendingCollectionViewCell.swift in Sources */,
+				1D3D5F1F2986C8E100658583 /* PlaceViewController.swift in Sources */,
+				1D3D5F062986C76F00658583 /* MainViewController.swift in Sources */,
+				1D3D5F292986C97900658583 /* CategoryTableViewCell.swift in Sources */,
+				1D3D5F2B2986C9A000658583 /* SectionHeaderView.swift in Sources */,
+				1D3D5F262986C95300658583 /* CategoryCollectionViewCell.swift in Sources */,
+				1D3D5F242986C92200658583 /* ProfileViewController.swift in Sources */,
+				1D3D5F022986C76F00658583 /* AppDelegate.swift in Sources */,
+				1D3D5F042986C76F00658583 /* SceneDelegate.swift in Sources */,
+				1D3D5F2D2987A87E00658583 /* CinemasList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D3D5F0C2986C77100658583 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D3D5F0D2986C77100658583 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D3D5F102986C77100658583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D3D5F112986C77100658583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D3D5F132986C77100658583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03FFD3D69F87D9A8803171AB /* Pods-KinoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SmockingRider.KinoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D3D5F142986C77100658583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DA6A9E33369E4BDDD9C86B /* Pods-KinoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SmockingRider.KinoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D3D5EF92986C76F00658583 /* Build configuration list for PBXProject "KinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3D5F102986C77100658583 /* Debug */,
+				1D3D5F112986C77100658583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D3D5F122986C77100658583 /* Build configuration list for PBXNativeTarget "KinoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3D5F132986C77100658583 /* Debug */,
+				1D3D5F142986C77100658583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D3D5EF62986C76F00658583 /* Project object */;
+}
