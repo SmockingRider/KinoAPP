@@ -158,24 +158,29 @@ private extension MovieViewController {
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
         contentView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
             make.leading.trailing.equalTo(view).inset(15)
         }
+        
         movieSearchBar.snp.makeConstraints { make in
             make.top.leading.trailing.equalToSuperview()
             make.height.equalTo(view).multipliedBy(0.06)
         }
+        
         categoryCollectionView.snp.makeConstraints { make in
             make.top.equalTo(movieSearchBar.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(view).multipliedBy(0.06)
         }
+        
         trendingCollectionView.snp.makeConstraints { make in
             make.top.equalTo(categoryCollectionView.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(view).multipliedBy(0.2)
         }
+        
         categoryTableView.snp.makeConstraints { make in
             make.top.equalTo(trendingCollectionView.snp.bottom).offset(10)
             make.height.equalTo(view).multipliedBy(1.5)
