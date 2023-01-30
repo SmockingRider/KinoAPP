@@ -15,8 +15,6 @@ class PlaceViewController: UIViewController {
     
     private let categoryList = Category.allCases
     
-    
-    
     private lazy var placeSearchBar: UISearchBar = {
         let serchBar = UISearchBar()
         serchBar.layer.borderColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
@@ -33,12 +31,6 @@ class PlaceViewController: UIViewController {
         collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
-    
-    //   private lazy var CinemasTableView: UITableView = {
-    //       let tableView = UITableView()
-    //       return tableView
-    //   }()
-    
     
     let cinema = CinemasList()
     var tableView = UITableView()
@@ -57,10 +49,9 @@ class PlaceViewController: UIViewController {
         
         setupViews()
         setupConstraints()
-        
-
     }
 }
+
     //MARK: - Collection view DataSource methods
     
     extension PlaceViewController: UICollectionViewDataSource {
@@ -143,19 +134,23 @@ class PlaceViewController: UIViewController {
             scrollView.snp.makeConstraints { make in
                 make.edges.equalToSuperview()
             }
+            
             contentView.snp.makeConstraints { make in
                 make.top.bottom.equalToSuperview()
                 make.leading.trailing.equalTo(view).inset(15)
             }
+            
             placeSearchBar.snp.makeConstraints { make in
                 make.top.leading.trailing.equalToSuperview()
                 make.height.equalToSuperview().multipliedBy(0.06)
             }
+            
             categoryCollectionView.snp.makeConstraints { make in
                 make.top.equalTo(placeSearchBar.snp.bottom).offset(10)
                 make.leading.trailing.equalToSuperview()
                 make.height.equalToSuperview().multipliedBy(0.05)
             }
+            
             tableView.snp.makeConstraints { make in
                 make.top.equalTo(categoryCollectionView.snp.bottom).offset(10)
                 make.leading.trailing.equalTo(view)
