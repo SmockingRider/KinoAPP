@@ -7,7 +7,12 @@
 
 import UIKit
 
+
 final class MovieViewController: UIViewController {
+    
+    private var apiCaller = APICaller()
+    private var movieList: [MovieModel] = []
+    private var movieListAll: [[MovieModel]] = []
     
     private let scrollView = UIScrollView()
     private let contentView = UIView()
@@ -17,7 +22,7 @@ final class MovieViewController: UIViewController {
     private lazy var movieSearchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.searchBarStyle = .minimal
-        searchBar.placeholder = "Search movies, series, tv shows"
+        searchBar.placeholder = "Search for movies, TV shows, and series"
         return searchBar
     }()
     
@@ -43,6 +48,7 @@ final class MovieViewController: UIViewController {
         let tableView = UITableView()
         tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: itemForProject.Identifiers.categoryTableViewCell)
         tableView.isScrollEnabled = false
+        tableView.separatorStyle = .none
         return tableView
     }()
 
@@ -57,10 +63,34 @@ final class MovieViewController: UIViewController {
         trendingCollectionView.delegate = self
         categoryTableView.dataSource = self
         categoryTableView.delegate = self
+        apiCaller.delegate = self
+        
+        apiCaller.fetchRequest()
+        
         
         setupViews()
         setupConstraints()
+            
     }
+}
+
+//MARK: - API Caller delegate methods
+
+extension MovieViewController: APICallerDelegate {
+    
+    
+    func didUpdateMovieList(with movieList: [MovieModel]) {
+        self.movieListAll.append(movieList)
+        DispatchQueue.main.async {
+            self.trendingCollectionView.reloadData()
+        }
+    }
+    
+    func didFailWithError(_ error: Error) {
+        print("Failer with error: ", error)
+    }
+    
+    
 }
 
 //MARK: - Collection view data source methods
@@ -71,7 +101,10 @@ extension MovieViewController: UICollectionViewDataSource {
         if collectionView == categoryCollectionView {
             return categoryList.count
         }
-        return 5
+        if movieListAll.isEmpty {
+            return 0
+        }
+        return movieListAll[0].count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -85,6 +118,7 @@ extension MovieViewController: UICollectionViewDataSource {
             return cell
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: itemForProject.Identifiers.trendingCollectionViewCell, for: indexPath) as! TrendingCollectionViewCell
+        cell.configure(with: movieListAll[0][indexPath.item].backdropPath)
         cell.layer.cornerRadius = 10
         cell.clipsToBounds = true
         return cell
@@ -99,7 +133,6 @@ extension MovieViewController: UICollectionViewDelegateFlowLayout {
         if collectionView == categoryCollectionView {
             let label = UILabel()
             label.text = categoryList[indexPath.row].rawValue
-            label.font = UIFont.systemFont(ofSize: 15)
             label.sizeToFit()
             return CGSize(width: label.frame.size.width + 30, height: collectionView.frame.size.height - 10)
         }
@@ -113,7 +146,7 @@ extension MovieViewController: UICollectionViewDelegateFlowLayout {
 extension MovieViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return categoryList.count - 1
+        return categoryList.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -122,12 +155,14 @@ extension MovieViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = SectionHeaderView()
-        view.configure(with: categoryList[section + 1].rawValue, number: 6)
+        let title = String(categoryList[section].rawValue.dropFirst())
+        view.configure(with: title, number: Int.random(in:20..<332))
         return view
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: itemForProject.Identifiers.categoryTableViewCell, for: indexPath) as! CategoryTableViewCell
+        cell.configure(with: movieListAll[indexPath.section])
         return cell
     }
 }
@@ -137,7 +172,7 @@ extension MovieViewController: UITableViewDataSource {
 extension MovieViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.size.height * 0.4
+        return view.frame.size.height * 0.3
     }
 }
 
@@ -167,6 +202,10 @@ private extension MovieViewController {
         movieSearchBar.snp.makeConstraints { make in
             make.top.leading.trailing.equalToSuperview()
             make.height.equalTo(view).multipliedBy(0.06)
+        }
+        
+        movieSearchBar.searchTextField.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
         }
         
         categoryCollectionView.snp.makeConstraints { make in

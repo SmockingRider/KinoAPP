@@ -11,23 +11,46 @@ import UIKit
 
 struct itemForProject {
     
+    struct Keys {
+        static let token = "8256e00a40719ca61292b5b333cb66c6"
+    }
+    
     struct Identifiers {
         static let categoryCollectionViewCell = "CategoryCollectionViewCell"
         static let trendingCollectionViewCell = "TrendingCollectionViewCell"
         static let categoryTableViewCell = "CategoryTableViewCell"
+        static let movieCollectionViewCell = "MovieCollectionViewCell"
     }
     struct Values {
-        
+        static let urlList = [URLs.trendingUrl, URLs.nowPlaing, URLs.topRated, URLs.popular, URLs.upcoming]
     }
     struct Colors {
         
     }
+    
+    
+    struct Links {
+        static let apiMainUrl = "https://api.themoviedb.org/3/"
+        static let imageUrl = "https://image.tmdb.org/t/p/w500/"  //add + poster path
+    }
+
+    struct URLs {
+        static let trendingUrl = "\(Links.apiMainUrl)trending/movie/day?api_key=\(Keys.token)"
+        static let nowPlaing = "\(Links.apiMainUrl)movie/now_playing?api_key=\(Keys.token)"
+        static let topRated = "\(Links.apiMainUrl)movie/top_rated?api_key=\(Keys.token)"
+        static let upcoming = "\(Links.apiMainUrl)movie/upcoming?api_key=\(Keys.token)&page=5"
+        static let popular = "\(Links.apiMainUrl)movie/popular?api_key=\(Keys.token)&page=5"
+        static let cinemaListApi = "https://kino.kz/_next/data/y-lBqskKB_O4Qcg15-qDk/cinemas.json"
+    }
 }
+
+
+
     enum Category: String, CaseIterable {
-        case all = "🔥All"
-        case streaming = "🎞️Streaming"
-        case onTV = "📺OnTV"
-        case inTheaters = "🍿In Theaters"
+        case nowPlaing = "🔥All"
+        case topRated = "🎞️Streaming"
+        case upcoming = "📺OnTV"
+        case popular = "🍿In Theaters"
     }
 
 class Cinema {
@@ -72,6 +95,8 @@ class Cinemas: UITableViewCell {
             make.top.equalTo(10)
         }
         self.contentView.addSubview(address)
+        address.font = UIFont(name: "Helvetica", size: 10)
+        address.textColor = UIColor(red: 136/255, green: 136/255, blue: 136/255, alpha: 1)
         address.snp.makeConstraints { make in
             make.top.equalTo(name.snp.bottom).offset(10)
             make.left.equalTo(image.snp.right).offset(10)
