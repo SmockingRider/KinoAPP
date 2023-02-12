@@ -42,7 +42,7 @@ struct APICaller {
             let decodedData = try JSONDecoder().decode(MovieData.self, from: data)
             for movie in decodedData.results {
                 if let backdropPath = movie.backdrop_path {
-                    let movieModel = MovieModel(adult: movie.adult, backdropPath: backdropPath, id: movie.id, title: movie.title, description: movie.overview, posterPath: movie.poster_path, genreIds: movie.genre_ids, releaseDate: movie.release_date, voteAverage: movie.vote_average)
+                    let movieModel = MovieModel(backdropPath: backdropPath, id: movie.id, title: movie.title, posterPath: movie.poster_path, genreIds: movie.genre_ids)
                     movieList.append(movieModel)
                 }
             }

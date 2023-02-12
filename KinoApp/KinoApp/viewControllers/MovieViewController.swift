@@ -82,7 +82,9 @@ extension MovieViewController: APICallerDelegate {
     func didUpdateMovieList(with movieList: [MovieModel]) {
         self.movieListAll.append(movieList)
         DispatchQueue.main.async {
+            self.categoryCollectionView.reloadData()
             self.trendingCollectionView.reloadData()
+            self.categoryTableView.reloadData()
         }
     }
     
@@ -161,9 +163,12 @@ extension MovieViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: itemForProject.Identifiers.categoryTableViewCell, for: indexPath) as! CategoryTableViewCell
-        cell.configure(with: movieListAll[indexPath.section])
-        return cell
+        if movieListAll.count == itemForProject.Values.urlList.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: itemForProject.Identifiers.categoryTableViewCell, for: indexPath) as! CategoryTableViewCell
+            cell.configure(with: movieListAll[indexPath.section])
+            return cell
+        }
+        return UITableViewCell()
     }
 }
 

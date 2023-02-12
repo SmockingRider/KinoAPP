@@ -38,9 +38,9 @@ struct itemForProject {
         static let trendingUrl = "\(Links.apiMainUrl)trending/movie/day?api_key=\(Keys.token)"
         static let nowPlaing = "\(Links.apiMainUrl)movie/now_playing?api_key=\(Keys.token)"
         static let topRated = "\(Links.apiMainUrl)movie/top_rated?api_key=\(Keys.token)"
-        static let upcoming = "\(Links.apiMainUrl)movie/upcoming?api_key=\(Keys.token)&page=5"
-        static let popular = "\(Links.apiMainUrl)movie/popular?api_key=\(Keys.token)&page=5"
-        static let cinemaListApi = "https://kino.kz/_next/data/y-lBqskKB_O4Qcg15-qDk/cinemas.json"
+        static let upcoming = "\(Links.apiMainUrl)movie/upcoming?api_key=\(Keys.token)"
+        static let popular = "\(Links.apiMainUrl)movie/popular?api_key=\(Keys.token)"
+        //static let cinemaListApi = "https://kino.kz/_next/data/y-lBqskKB_O4Qcg15-qDk/cinemas.json"
     }
 }
 
