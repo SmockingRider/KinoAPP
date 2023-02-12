@@ -40,7 +40,6 @@ struct itemForProject {
         static let topRated = "\(Links.apiMainUrl)movie/top_rated?api_key=\(Keys.token)"
         static let upcoming = "\(Links.apiMainUrl)movie/upcoming?api_key=\(Keys.token)"
         static let popular = "\(Links.apiMainUrl)movie/popular?api_key=\(Keys.token)"
-        //static let cinemaListApi = "https://kino.kz/_next/data/y-lBqskKB_O4Qcg15-qDk/cinemas.json"
     }
 }
 
